@@ -1,6 +1,9 @@
 import React from 'react';
-import { TouchableOpacity, Text, View } from 'react-native';
+import { ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import UIContainer from '../components/UIContainer';
+import UIButton from '../components/UIButton';
+import UIListItem from '../components/UIListItem';
 
 const Home = () => {
   const navigation = useNavigation();
@@ -10,12 +13,13 @@ const Home = () => {
   };
 
   return (
-    <View>
-      <Text>Home</Text>
-      <TouchableOpacity onPress={handlePress}>
-        <Text>Criar todo</Text>
-      </TouchableOpacity>
-    </View>
+    <UIContainer>
+      <ScrollView>
+        <UIListItem />
+        <UIListItem />
+      </ScrollView>
+      <UIButton handlePress={handlePress}>Adicionar tarefa</UIButton>
+    </UIContainer>
   )
 };
 

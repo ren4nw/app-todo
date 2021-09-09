@@ -5,8 +5,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "entryPoint": "./src/index.jsx",
     "splash": {
-      "image": "./assets/todo_splash.png",
+      "image": "./assets/images/todo_splash.png",
       "backgroundColor": "#fb6c54"
     },
     "updates": {
